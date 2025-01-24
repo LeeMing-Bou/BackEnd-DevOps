@@ -15,5 +15,6 @@ async function bootstrap() {
   // Listen to port given by environment on production server (Heroku, DigitalOcean App,..), otherwise 3000
   // Specify '0.0.0.0' in the listen() to accept connections on other hosts.
   await app.listen(process.env.PORT || 3000);
+  console.log("Listening On PORT" + " " + 3000);
 }
 bootstrap();

@@ -9,7 +9,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./test:/app/test
-      - .env:/app/.env
+      # - ./env:/app/.env
       - ./upload:/app/upload
   nginx:
     build:
